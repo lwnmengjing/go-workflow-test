@@ -12,5 +12,5 @@ import (
  */
 
 func main() {
-	fmt.Println("echo name=test1 >> $$GITHUB_OUTPUT")
+	fmt.Println("echo name=test1 >> $GITHUB_OUTPUT")
 }
