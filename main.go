@@ -16,7 +16,7 @@ import (
 func main() {
 	output := "echo \"name=test1\" >> $GITHUB_OUTPUT"
 	fmt.Println(output)
-	_, err := os.Stdout.WriteString(output)
+	_, err := os.Stdout.WriteString(output + "\n")
 	if err != nil {
 		log.Fatalf("write string error: %v", err)
 	}
