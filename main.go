@@ -1,8 +1,7 @@
 package main
 
 import (
-	"log"
-	"os/exec"
+	"fmt"
 )
 
 /*
@@ -13,8 +12,5 @@ import (
  */
 
 func main() {
-	err := exec.Command("echo", "\"name=test1\"", ">>", "$GITHUB_OUTPUT").Run()
-	if err != nil {
-		log.Fatalf("cmd.Run() failed with %s\n", err)
-	}
+	fmt.Println("echo name=test1 >> $$GITHUB_OUTPUT")
 }
